@@ -1,0 +1,3 @@
+python run_clm.py --model_name_or_path dbmdz/german-gpt2 --train_file Dialoge.txt --validation_file DialogeValidate.txt --per_device_train_batch_size 2 --per_device_eval_batch_size 2 --do_train --do_eval --output_dir /tmp/ezlan-gpt --overwrite_output_dir
+
+python run_clm.py --model_name_or_path dbmdz/german-gpt2 --train_file Dialoge.txt --per_device_train_batch_size 2 --per_device_eval_batch_size 2 --do_train --output_dir /tmp/ezlan-gpt --overwrite_output_dir
