@@ -19,7 +19,7 @@ from transformers import GPT2Tokenizer
 base_tokenizer = GPT2Tokenizer.from_pretrained(r'C:\tmp\ezlanByteTokenizer')
 model = GPT2LMHeadModel.from_pretrained(r'C:\tmp\ezlan-gpt')
 
-text_ids = base_tokenizer.encode("Wim ist ein", return_tensors = 'pt')
+text_ids = base_tokenizer.encode("Wer bist du?", return_tensors = 'pt')
 
     # max_length= 50,  
     # do_sample=True,  
