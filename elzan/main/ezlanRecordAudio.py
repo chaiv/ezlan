@@ -6,8 +6,11 @@ Created on 08.10.2022
 import pyaudio
 import wave
 import os
+
+ezlanPath = r'C:\Users\vital\Google Drive\ezlan\recordings/'
+
 def getLastNumberFileName():
-    l=os.listdir(r'G:\Meine Ablage\ezlan\recordings')
+    l=os.listdir(ezlanPath)
     li=[x.split('.')[0] for x in l]
     lastNumberFileName = 0
     for filename in li:
@@ -22,7 +25,7 @@ sample_format = pyaudio.paInt16
 channels = 1
 fs = 22050  
 seconds = 7
-filename = r'G:\Meine Ablage\ezlan\recordings/'+getLastNumberFileName()+'.wav'
+filename = ezlanPath +getLastNumberFileName()+'.wav'
 
 p = pyaudio.PyAudio()  # Create an interface to PortAudio
 
