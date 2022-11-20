@@ -24,8 +24,8 @@ def cut_silence(importpath, exportpath):
     combined.export(exportpath, format = audio_format)
     
 
-importpath =  r"C:\Users\vital\Google Drive\ezlan\recordings"
-exportpath =   r"C:\Users\vital\Google Drive\ezlan\recordingsWithoutSilence"
+importpath =  r"G:\Meine Ablage\ezlan\recordings"
+exportpath =   r"G:\Meine Ablage\ezlan\ttsdata\wavs"
 l=os.listdir(importpath)
 for file in l: 
     cut_silence(importpath+"/"+file, exportpath+"/"+file)

@@ -1,0 +1,3 @@
+python extract_durations.py --config 'G:/Meine Ablage/ezlan/ttsdata/training_config.yaml'
+
+python train_tts.py --config 'G:/Meine Ablage/ezlan/ttsdata/training_config.yaml'
